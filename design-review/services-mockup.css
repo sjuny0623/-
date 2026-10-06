@@ -1,0 +1,44 @@
+/* 여정 범례 */
+.sv-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin: 0 0 22px; font-size: 14px; font-weight: 700; color: var(--muted-d); }
+.sv-legend b { color: #fff; font-weight: 800; }
+.sv-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sv-legend i { width: 10px; height: 10px; border-radius: 3px; }
+.sv-legend .lg-note { margin-left: auto; font-weight: 600; font-size: 13px; }
+.sv-legend .lg-note a { color: var(--c-hi); }
+/* 단계 색: 방식 그래프 · Start 계단과 같은 '밝아지는' 순서 */
+.svc[data-st="find"] { --st: #2340E0; --st-ic: #fff; }
+.svc[data-st="choose"] { --st: #4A64EC; --st-ic: #fff; }
+.svc[data-st="contact"] { --st: #A9BBFF; --st-ic: #0A1024; }
+.svc .svc__ic { background: var(--st) !important; color: var(--st-ic) !important; border-color: transparent !important; }
+.svc .svc__tag { color: var(--muted-d) !important; letter-spacing: .08em; }
+.svc .svc__tag::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px; border-radius: 2px; background: var(--st); vertical-align: 1px; }
+/* 커서를 따라오는 은은한 빛 + 담기 버튼 */
+.svc { position: relative; overflow: hidden; }
+.svc.mk-hover { border-color: rgba(169,187,255,.5) !important; background: radial-gradient(420px circle at var(--mx, 70%) var(--my, 30%), rgba(35,64,224,.30), transparent 60%), #141D3A !important; }
+.sv-add { position: absolute; right: 18px; bottom: 18px; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; font-size: 12.5px; font-weight: 800; color: #0A1024; background: var(--c-hi); opacity: 0; transform: translateY(6px); }
+.svc.mk-hover .sv-add { opacity: 1; transform: none; }
+.svc.mk-picked { border-color: rgba(169,187,255,.6) !important; box-shadow: inset 0 0 0 1px rgba(169,187,255,.35); }
+.svc.mk-picked .sv-add { opacity: 1; transform: none; background: transparent; color: var(--c-hi); border: 1px solid rgba(169,187,255,.6); }
+.svc .svc__yes { display: none !important; }
+/* 담은 서비스 요약 띠 */
+.sv-tray { display: flex; align-items: center; gap: 14px; margin-top: 16px; padding: 14px 18px; border-radius: 12px; border: 1px dashed rgba(169,187,255,.35); font-size: 14.5px; font-weight: 700; color: rgba(255,255,255,.85); }
+.sv-tray em { font-style: normal; color: var(--c-hi); }
+.sv-tray a { margin-left: auto; padding: 9px 14px; border-radius: 6px; background: var(--c-accent); color: #fff; font-size: 14px; }
+/* 마지막 카드 버튼 */
+.enough__go { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; padding: 12px 18px; border-radius: 6px; background: #fff; color: var(--c-accent); font-size: 15px; font-weight: 800; }
+@media (max-width: 767px) {
+  #svcGrid { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  #svcGrid .svc { padding: 16px 14px 16px !important; min-height: 0 !important; }
+  #svcGrid .svc:last-child { grid-column: span 2; }
+  .svc .svc__name { flex-direction: column; align-items: flex-start !important; gap: 10px !important; font-size: 17px !important; margin-top: 0 !important; }
+  .svc .svc__tag, .svc .svc__a { display: none !important; }
+  .svc .svc__q { margin-top: 8px !important; font-size: 13px !important; line-height: 1.5 !important; }
+  .sv-add { right: 12px; top: 14px; bottom: auto; width: 30px; height: 30px; padding: 0; justify-content: center; font-size: 0; opacity: 1; transform: none; background: transparent; border: 1px solid rgba(169,187,255,.45); }
+  .sv-add::before { content: "+"; font-size: 17px; font-weight: 800; color: var(--c-hi); }
+  .svc.mk-picked .sv-add { background: var(--c-hi); }
+  .svc.mk-picked .sv-add::before { content: "✓"; color: #0A1024; font-size: 14px; }
+  .sv-legend { gap: 8px 14px; font-size: 12.5px; }
+  .sv-legend .lg-note { margin-left: 0; width: 100%; }
+  .sv-tray { flex-wrap: wrap; background: #121A33; border-style: solid; }
+  .sv-tray a { margin-left: 0; width: 100%; text-align: center; }
+}
