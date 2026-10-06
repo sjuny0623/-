@@ -21,3 +21,9 @@
 | `generate.py` | 생성 스크립트 (Pretendard 700/800/900 정적 인스턴스 필요) |
 
 모든 글자는 Pretendard를 외곽선(path)으로 변환해, 글꼴이 없는 환경에서도 같은 모양으로 보입니다.
+
+## 적용 현황 (v45)
+- 사이트 헤더 · 푸터 · 파비콘 · 애플 터치 아이콘 · 공유 이미지(og.png) · 개인정보처리방침 헤더
+- 브랜드 문서 템플릿 (Claude 슬라이드, PPTX/PDF로 내려받기 가능)
+  - 제안서: https://claude.ai/artifact/9iYQwSaWz1EruzeSkXNJEV
+  - 월간 리포트: https://claude.ai/artifact/1YrwnxnZQHVXDoxmTHiGnH
