@@ -1,0 +1,106 @@
+/* 시안 WHITE · BLUE — 어둠을 빼고, 흰 바탕 위에 Master Blue 하나로 */
+:root { --mist: #F4F6FB; --wash: #EEF2FF; --tint: #DDE4FF; --b5: #4A64EC; --ink-m: #5A6275; }
+body { background: #fff; }
+.theme-dark, .theme-light { background: #fff; color: var(--c-ink); }
+.theme-light { --muted-l: var(--ink-m); }
+/* 어두운 섹션 안의 토큰을 밝게 */
+.hero, .problem--ask, .svcs, .how, .start, .site-footer, .site-header {
+  --muted-d: var(--ink-m); --line-d: rgba(10,16,36,.10); --c-hi: var(--c-accent);
+}
+/* 리듬: 흰색 ↔ 미스트 */
+.problem--ask, .svcs, .work, .faq { background: var(--mist) !important; }
+.problem--cause, .how, .start { background: #fff !important; }
+/* 헤더 */
+.site-header { color: var(--c-ink); }
+.site-header.is-solid { background: rgba(255,255,255,.92); border-bottom-color: rgba(10,16,36,.08); }
+.site-nav__list a { color: #3A4152; }
+.wordmark__t span { color: var(--c-accent); }
+.menu-toggle__bar { background: var(--c-ink); }
+/* 히어로 */
+.hero { background: #fff !important; }
+.hero__glow--a { opacity: .32; }
+.hero__glow--c { opacity: .18; }
+.hero__grain, .hero__lines { opacity: .25; }
+.hero__title { color: var(--c-ink); }
+.hero__sub { color: var(--ink-m); }
+.hero__em { color: var(--c-ink); }
+.hero .btn--line { background: #fff; color: var(--c-ink); border-color: rgba(10,16,36,.2); }
+.hero .btn--accent { box-shadow: 0 10px 24px rgba(35,64,224,.25); }
+.hero__proof { border-top-color: rgba(10,16,36,.10); }
+.hero__stats li { border-left-color: rgba(10,16,36,.10); }
+.hero__n, .hero__stats .is-blue .hero__n { color: var(--c-accent); }
+/* 서비스 */
+.svc { background: #fff; border-color: rgba(10,16,36,.06); box-shadow: 0 1px 2px rgba(10,16,36,.04), 0 8px 24px rgba(35,64,224,.06); }
+.svc__a { color: #3A4152; }
+.svc:hover, .svc:focus-visible, .svc.is-active, .svc.is-flash { border-color: rgba(35,64,224,.35); background: #fff; box-shadow: 0 16px 40px rgba(35,64,224,.14); }
+.enough { background: linear-gradient(120deg, #2340E0 0%, #3A55F0 55%, #5B74F5 100%) !important; color: #fff; box-shadow: 0 30px 60px rgba(35,64,224,.25); }
+/* How */
+.how__tags li { color: #3A4152; border-color: rgba(10,16,36,.14); }
+.how__col:nth-child(1) .how__bar { background: var(--tint); color: var(--c-ink); }
+.how__col:nth-child(2) .how__bar { background: #A9BBFF; color: var(--c-ink); }
+.how__col:nth-child(3) .how__bar { background: var(--b5); color: #fff; }
+.how__col:nth-child(1) .how__bar small, .how__col:nth-child(2) .how__bar small { color: rgba(10,16,36,.66); }
+.how__bar.is-goal { background: var(--c-accent); color: #fff; }
+.how__bar.is-goal small { color: rgba(255,255,255,.85); }
+.how__line .hl-main, .how__line .hl-ext path { stroke: var(--c-accent); }
+.how__line .hl-area { fill: rgba(35,64,224,.05); }
+.how__line circle { stroke: var(--c-accent); fill: #fff; }
+.how__line circle:nth-last-of-type(2) { fill: var(--c-accent); }
+.how__line circle:last-of-type { fill: none; }
+.how__return-label { background: #fff; }
+.how__page { background: #fff !important; box-shadow: 0 30px 70px rgba(35,64,224,.12); border: 1px solid rgba(10,16,36,.06); }
+/* Start */
+.lanes__grid i { border-left-color: rgba(10,16,36,.07); }
+.lane--1 .lane__body { background: var(--c-accent); color: #fff; }
+.lane--2 .lane__body { background: var(--b5); color: #fff; }
+.lane--3 .lane__body { background: var(--tint); color: var(--c-ink); }
+.lane--3 .lane__plus { background: var(--c-accent); color: #fff; }
+.stair__months i { color: var(--ink-m); }
+.stair__note { color: rgba(10,16,36,.45); }
+.know__wk b { color: var(--c-ink); }
+.know__wk b, .know__wk span { background: #fff; }
+.know__wk::before { box-shadow: 0 0 0 4px #fff, 0 0 0 5px rgba(35,64,224,.35); }
+.know__paper { box-shadow: 0 12px 28px rgba(35,64,224,.12); }
+.know__tg { color: #fff; }
+.start .mid-cta { background: var(--wash); border-color: transparent; }
+/* Work 카드 */
+.wk { box-shadow: 0 1px 2px rgba(10,16,36,.04), 0 10px 30px rgba(35,64,224,.07); border-color: rgba(10,16,36,.06); }
+/* 상담: 페이지의 유일한 '진한 면' — 블루 */
+.cta { background: radial-gradient(900px 600px at 0% 0%, #4A64EC 0%, rgba(74,100,236,0) 60%), linear-gradient(135deg, #2340E0 0%, #1A30B8 100%) !important; color: #fff; }
+.cta .sec-head__idx, .cta .sec-head__idx span { color: rgba(255,255,255,.8); }
+.cta .sec-head__idx span::before { background: #fff; }
+.cta__word { color: #C9D3FF !important; }
+.cta__sub { color: rgba(255,255,255,.88); }
+.cta__note { color: rgba(255,255,255,.7); }
+.cta form, .cta .form, .cta__form { box-shadow: 0 40px 80px rgba(10,16,36,.25); }
+.mk-steps li { border-color: rgba(255,255,255,.22) !important; }
+.mk-steps b { color: #C9D3FF !important; }
+.mk-steps span { color: rgba(255,255,255,.78) !important; }
+/* 푸터 */
+.site-footer { background: #fff !important; color: var(--c-ink); border-top: 1px solid rgba(10,16,36,.08); }
+.site-footer__m, .hl-foot { color: var(--c-accent); }
+.site-footer__line { color: var(--c-ink); }
+.site-footer .wordmark__caret { background: var(--c-accent); }
+.roll__w--final, .roll .roll__w--final, .js .hero:not(.is-mastered) .hc { color: var(--c-ink); }
+.hero__lead { color: var(--c-ink); }
+.svc__q, .svc:hover .svc__q, .svc:focus-visible .svc__q, .svc.is-active .svc__q { color: var(--c-ink); }
+.svc__tag { color: var(--c-accent); opacity: .7; }
+.start .mid-cta { color: var(--c-ink); }
+.mk-steps { margin-top: 44px; display: grid; max-width: 420px; }
+.mk-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-top: 1px solid; }
+.mk-steps li:last-child { border-bottom: 1px solid; }
+.mk-steps b { font-size: 13px; font-weight: 800; padding-top: 3px; }
+.mk-steps strong { display: block; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.mk-steps span { display: block; margin-top: 4px; font-size: 14.5px; }
+.hero__l { color: var(--ink-m) !important; }
+.hero__base { color: rgba(10,16,36,.45) !important; }
+.form-card { background: #fff !important; box-shadow: 0 40px 80px rgba(10,16,36,.28); }
+.site-nav__list a:hover, .site-nav__list a[aria-current="true"], .site-nav__list a.roll[aria-current="true"] { color: var(--c-accent); }
+.roll__box > span + span { color: var(--c-accent) !important; }
+body.menu-open .site-header { background: #fff; }
+@media (max-width: 1023px) {
+  .site-nav { background: #fff; border-top-color: rgba(10,16,36,.08); }
+  .site-nav__list li { border-bottom-color: rgba(10,16,36,.08); }
+  .site-nav__list a { color: var(--c-ink); }
+}
+.logo-k__arm { fill: #A9BBFF !important; }

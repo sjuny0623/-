@@ -8,3 +8,8 @@
 - 시안 3 · SIGNAL: 성과 숫자에만 시그널 오렌지 (`theme-3-signal.css`)
 
 CSS는 시안 확인용 덮어쓰기입니다. 확정되면 style.css에 정식으로 반영합니다.
+
+## 시안 WHITE · BLUE (어두운 색 제거 리뉴얼)
+- `white-blue-board.png` — 지금과 비교, 섹션별 화면, 모바일, 팔레트와 규칙
+- `theme-4-white-blue.css` — 시안 덮어쓰기 CSS (#contact 를 뺀 모든 theme-dark 섹션을 theme-light 로 바꿔 함께 사용)
+- 미리보기: https://claude.ai/artifact/WFr9mh51me3tkPfh6yTZse
