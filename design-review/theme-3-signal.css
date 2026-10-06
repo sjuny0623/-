@@ -1,0 +1,13 @@
+/* 시안 3 · SIGNAL — 파랑은 '우리가 하는 일', 시그널 오렌지는 '고객이 얻은 결과' */
+:root { --sig: #FF7A45; --sig-l: #E4570F; }
+.hero__stats .hero__n, .hero__stats .is-blue .hero__n { color: #fff; }
+.hero__stats .hero__n small, .hero__stats .hero__n span { color: var(--sig); }
+.hero__lead span { color: var(--sig); }
+.wk__emph, .wk__emph b, .wk__emph small { color: var(--sig-l) !important; }
+.how__bar.is-goal { background: var(--sig); color: var(--c-dark); }
+
+.how__line circle:nth-last-of-type(2) { fill: var(--sig); }
+.how__line circle:last-of-type { stroke: var(--sig); }
+.how__line .hl-ext path { stroke: var(--sig); }
+.know__nm { color: var(--sig); border-color: rgba(255,122,69,.5); }
+.svc__yes { background: var(--sig) !important; }

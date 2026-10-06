@@ -1,0 +1,13 @@
+/* 시안 1 · NIGHT — 지금의 결을 지키며 정리 */
+.svcs.theme-dark { background: #0D142C; }
+.site-footer { background: #060A18; }
+.cta.theme-dark { background: radial-gradient(900px 620px at 8% 0%, rgba(35,64,224,.20), transparent 62%), var(--c-dark); }
+.lane--2 .lane__body { background: rgba(35,64,224,.45); color: #fff; }
+.lane--3 .lane__body { background: rgba(35,64,224,.24); color: #fff; }
+.lane--3 .lane__plus { background: #fff; color: var(--c-accent); }
+.mk-steps { margin-top: 44px; display: grid; gap: 0; max-width: 420px; }
+.mk-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 18px 0; border-top: 1px solid var(--line-d); }
+.mk-steps li:last-child { border-bottom: 1px solid var(--line-d); }
+.mk-steps b { font-family: var(--f-en); font-size: 13px; font-weight: 800; color: var(--c-hi); padding-top: 3px; }
+.mk-steps strong { display: block; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+.mk-steps span { display: block; margin-top: 4px; font-size: 14.5px; color: var(--muted-d); }

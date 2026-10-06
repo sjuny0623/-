@@ -1,0 +1,61 @@
+/* 시안 2 · PAPER — 밝은 종이 위의 에디토리얼, 어둠은 '결정적 장면'에만 */
+.problem--ask { background: #F6F6F3 !important; color: var(--c-ink); }
+.problem--ask .pain { border-top-color: var(--line-l); }
+.problem--ask .pain__num { color: var(--c-accent); }
+.problem--ask .pain__box { border-color: rgba(10,16,36,.35); }
+.problem--ask .pain:hover { background: linear-gradient(90deg, rgba(35,64,224,.06), rgba(35,64,224,0)); }
+.problem--ask .pain[aria-pressed="true"], .problem--ask .pains__result { color: var(--c-accent); }
+.problem--cause { background: #FFFFFF !important; }
+.how { background: var(--c-light) !important; color: var(--c-ink); }
+.how .sec-head__title span, .how__rep-title span, .how__k { color: var(--c-accent); }
+.how__stg + .how__stg { border-left-color: var(--line-l); }
+.how__n { color: var(--c-accent); }
+.how__tags li { color: #3A4152; border-color: rgba(10,16,36,.18); }
+.how__col:nth-child(1) .how__bar { background: #D3DBFF; color: var(--c-ink); }
+.how__col:nth-child(2) .how__bar { background: #9DB0FF; color: var(--c-ink); }
+.how__col:nth-child(3) .how__bar { background: #4A64EC; color: #fff; }
+.how__col:nth-child(1) .how__bar small, .how__col:nth-child(2) .how__bar small { color: rgba(10,16,36,.66); }
+.how__bar.is-goal { background: var(--c-accent); color: #fff; }
+.how__bar.is-goal small { color: rgba(255,255,255,.82); }
+.how__line .hl-main, .how__line .hl-ext path { stroke: var(--c-ink); }
+.how__line .hl-area { fill: rgba(35,64,224,.06); }
+.how__line circle { stroke: var(--c-ink); fill: var(--c-light); }
+.how__line circle:last-of-type { fill: none; }
+.how__line circle:nth-last-of-type(2) { fill: var(--c-ink); }
+.how__return-label { background: var(--c-light); color: var(--c-accent); }
+.how__rep { border-top-color: var(--line-l); }
+.how__rep-sub { color: var(--muted-l); }
+.how__rep-card, .how__rep > div:last-child { filter: drop-shadow(0 24px 48px rgba(10,16,36,.10)); }
+.work { background: var(--c-dark) !important; color: #fff; }
+.work .sec-head__title, .work .brands__title, .work .brands__list dt { color: #fff; }
+.work .brands__list li { color: rgba(255,255,255,.62); }
+.work .brands__list li:not(:last-child)::after { color: rgba(255,255,255,.2); }
+.work .brands__list > div { border-bottom-color: var(--line-d); }
+.work .wk-dots i { background: rgba(255,255,255,.22); }
+.work .wk-dots i.is-on { background: var(--c-hi); }
+.work .wk-arr { border-color: rgba(255,255,255,.3); color: #fff; }
+.work .wk-count { color: var(--muted-d); }
+.start { background: #F6F6F3 !important; color: var(--c-ink); }
+.stair__lead { color: var(--muted-l); }
+.stair__big span, .know__title span { color: var(--c-accent); }
+.lanes__grid i { border-left-color: rgba(10,16,36,.08); }
+.lanes__drop { border-left-color: rgba(35,64,224,.4); }
+.lane--2 .lane__body { background: #6D84F2; color: #fff; }
+.lane--3 .lane__body { background: #B9C6FF; color: var(--c-ink); }
+.lane--3 .lane__plus { background: var(--c-ink); color: #fff; }
+.stair__months b { color: var(--muted-l); }
+.stair__months .is-first b { color: var(--c-accent); }
+.stair__note { color: rgba(10,16,36,.45); }
+.know { border-top-color: var(--line-l); }
+.know__when, .know__nm { color: var(--c-accent); }
+.know__nm { border-color: rgba(35,64,224,.4); }
+.know__paper { box-shadow: 0 10px 24px rgba(10,16,36,.10); }
+.start .mid-cta { border-color: var(--line-l); background: #fff; color: var(--c-ink); }
+.faq.theme-light { background: #FFFFFF; }
+.lane--1 .lane__body, .lane--2 .lane__body { color: #fff; }
+.know__wk b { color: var(--c-ink); }
+.know__wk span { color: var(--c-accent); }
+.know__wk b, .know__wk span { background: #F6F6F3; }
+.know__wk::before { background: var(--c-accent); box-shadow: 0 0 0 4px #F6F6F3, 0 0 0 5px rgba(35,64,224,.35); }
+.how__page { background: #fff !important; box-shadow: 0 30px 60px rgba(10,16,36,.10); }
+.work .wk { color: var(--c-ink); }
