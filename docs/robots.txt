@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keywordmaster.co.kr/sitemap.xml

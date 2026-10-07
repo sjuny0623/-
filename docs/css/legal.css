@@ -1,0 +1,89 @@
+/* =============================================
+   법적 문서·404 공용 레이아웃 (style.css 토큰 재사용)
+   ============================================= */
+.legal-header {
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--white);
+}
+.legal-header .container {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.legal-back {
+  font-size: .875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.legal-main {
+  max-width: 760px;
+  padding: 56px 24px 96px;
+  margin: 0 auto;
+}
+.legal-main h1 {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  margin-bottom: 12px;
+}
+.legal-meta { font-size: .85rem; color: var(--gray-500); margin-bottom: 32px; }
+
+/* 검토 필요 배너 — 법률 검토 완료 후 삭제 */
+.legal-draft {
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  color: #78350f;
+  font-size: .875rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.legal-main h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 40px 0 12px;
+  padding-top: 8px;
+  letter-spacing: -.02em;
+}
+.legal-main p, .legal-main li {
+  font-size: .95rem;
+  color: var(--gray-700);
+  line-height: 1.8;
+}
+.legal-main ul, .legal-main ol { list-style: disc; padding-left: 1.25em; margin: 8px 0; }
+.legal-main ol { list-style: decimal; }
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: .9rem;
+}
+.legal-table th, .legal-table td {
+  border: 1px solid var(--gray-200);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+.legal-table th { background: var(--gray-50); font-weight: 700; width: 32%; }
+.legal-todo {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #fef3c7;
+  color: #78350f;
+  font-size: .8rem;
+  font-weight: 700;
+}
+.legal-footer {
+  border-top: 1px solid var(--gray-200);
+  padding: 24px 0;
+  font-size: .8rem;
+  color: var(--gray-600);
+}
+@media (max-width: 480px) {
+  .legal-table th, .legal-table td { display: block; width: 100%; border-top: none; }
+  .legal-table tr:first-child th { border-top: 1px solid var(--gray-200); }
+}
