@@ -1,5 +1,5 @@
 /* =========================================================
-   업종별 랜딩(법률마케팅 · 병원마케팅) 공용 — 메인과 같은 Ink · Stone · Master Blue
+   업종별 랜딩(법률마케팅) — 메인과 같은 Ink · Stone · Master Blue
    ========================================================= */
 :root {
   --ink: #0A1024; --deep: #121A33; --stone: #EDEEEA; --paper: #FBFBF9;
@@ -93,15 +93,6 @@ ul, ol { list-style: none; }
 .clients { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .clients li { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line-l); background: var(--paper); font-size: 15px; font-weight: 600; }
 .sub { margin-top: clamp(64px, 8vw, 104px); font-size: clamp(20px, 1.8vw, 24px); font-weight: 800; letter-spacing: -.03em; }
-
-/* 보고 흐름 */
-.flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 56px; }
-.flow li { padding: 26px; border-radius: 16px; background: rgba(255,255,255,.04); border: 1px solid var(--line-d); }
-.flow b { display: block; font-size: 13px; letter-spacing: .12em; color: var(--ice); }
-.flow strong { display: block; margin-top: 10px; font-size: 21px; font-weight: 800; letter-spacing: -.03em; }
-.flow p { margin-top: 8px; font-size: 15px; color: var(--mut-d); }
-@media (max-width: 960px) { .flow { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .flow { grid-template-columns: 1fr; } }
 
 /* FAQ */
 .faq { margin-top: 48px; border-top: 1px solid var(--line-l); }

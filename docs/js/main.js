@@ -423,7 +423,7 @@ async function submitContactForm(payload) {
   });
 
   // B. 핵심 문장 채우기: 어절 단위로 감싸고, 문장이 화면을 지나가는 정도에 따라 순서대로 채운다
-  const fills = [...document.querySelectorAll('.cause__title, .band__text')];
+  const fills = [...document.querySelectorAll('.cause__title')];
   fills.forEach(el => {
     const parts = el.innerHTML.split(/(<br\s*\/?>|<br class="[^"]*"\s*\/?>)/i);
     el.innerHTML = parts.map(part => /^<br/i.test(part) ? part
@@ -434,7 +434,6 @@ async function submitContactForm(payload) {
   if (!canAnimate) {
     titles.forEach(el => el.classList.add('is-in'));
     document.querySelectorAll('.fill-w').forEach(w => w.classList.add('is-on'));
-    document.querySelectorAll('.work-grid .case').forEach(c => c.classList.add('is-in'));
     return;
   }
 
@@ -442,7 +441,6 @@ async function submitContactForm(payload) {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
   }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
   titles.forEach(el => io.observe(el));
-  document.querySelectorAll('.work-grid .case').forEach(c => io.observe(c));
 
   let ticking = false;
   function updateFill() {
@@ -534,11 +532,9 @@ async function submitContactForm(payload) {
    동작 줄이기·자바스크립트 없음 → '모든 키워드' 고정 */
 (function heroRoll() {
   const roll = document.getElementById('heroRoll');
-  const index = document.getElementById('heroIndex');
   const heroEl = document.querySelector('.hero');
   if (!roll || reduceMotion.matches) { if (heroEl) heroEl.classList.add('is-mastered'); return; }
   const words = roll.dataset.words.split('|');
-  const items = index ? [...index.querySelectorAll('.hero__ix')] : [];
   // 단어들을 세로로 쌓은 트랙 구성
   roll.textContent = '';
   const track = document.createElement('span'); track.className = 'roll__track';
@@ -563,8 +559,6 @@ async function submitContactForm(payload) {
     track.style.transform = `translateY(${-i * 100 / words.length}%)`;
     roll.style.width = widthOf(i) + 'px';
     roll.classList.toggle('is-final', i === words.length - 1);
-    items.forEach((it, k) => it.classList.toggle('is-on', k <= Math.min(i, items.length - 1)));
-    if (index) index.classList.toggle('is-all', i === words.length - 1);
     if (i === words.length - 1 && animate) setTimeout(() => heroEl.classList.add('is-mastered'), 420);
   }
   // 글꼴이 준비된 뒤 폭을 재고 시작
